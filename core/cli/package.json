@@ -1,0 +1,25 @@
+{
+  "name": "@dada-fe-cli/cli",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "kui <872505550@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/cli.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "bin": {
+    "dada-fe-cli": "bin/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@dada-fe-cli/cli.test.js"
+  }
+}
