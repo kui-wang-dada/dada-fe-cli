@@ -15,5 +15,20 @@
   ],
   "scripts": {
     "test": "node ./__tests__/init.test.js"
+  },
+  "dependencies": {
+    "@dada-fe-cli/command": "*",
+    "@dada-fe-cli/log": "*",
+    "@dada-fe-cli/package": "*",
+    "@dada-fe-cli/request": "*",
+    "@dada-fe-cli/utils": "*",
+    "ejs": "^3.1.5",
+    "fs-extra": "^9.0.1",
+    "glob": "^7.1.6",
+    "inquirer": "^7.3.3",
+    "kebab-case": "^1.0.0",
+    "semver": "^7.3.4",
+    "spinner": "^0.3.4",
+    "user-home": "^2.0.0"
   }
 }

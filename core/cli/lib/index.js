@@ -9,7 +9,8 @@ const userHome = require("user-home");
 const pathExists = require("path-exists").sync;
 const commander = require("commander");
 const log = require("@dada-fe-cli/log");
-// const exec = require("@dada-fe-cli/exec");
+const exec = require("@dada-fe-cli/exec");
+// const initFunc = require("@dada-fe-cli/init");
 
 const constant = require("./const");
 const pkg = require("../package.json");
@@ -39,9 +40,7 @@ function registerCommand() {
   program
     .command("init [projectName]")
     .option("-f, --force", "是否强制初始化项目")
-    .action(() => {
-      console.log(process.argv);
-    });
+    .action(exec);
 
   // 开启debug模式
   program.on("option:debug", function () {
@@ -76,17 +75,11 @@ function registerCommand() {
 }
 
 async function prepare() {
-  log.info(1);
   checkPkgVersion();
-  log.info(2);
   checkRoot();
-  log.info(3);
   checkUserHome();
-  log.info(4);
   checkEnv();
-  log.info(5);
   //   await checkGlobalUpdate();
-  log.info(6);
 }
 
 async function checkGlobalUpdate() {
