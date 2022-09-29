@@ -1,10 +1,7 @@
 {
-  "name": "@dada-fe-cli/log",
-  "version": "1.0.0",
-  "description": "dada-fe-cli log",
-  "keywords": [
-    "log"
-  ],
+  "name": "@dada-fe-cli/get-npm-info",
+  "version": "1.0.4",
+  "description": "get npm info",
   "author": "kui <872505550@qq.com>",
   "homepage": "",
   "license": "ISC",
@@ -16,13 +13,12 @@
   "files": [
     "lib"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "npmlog": "^4.1.2"
+    "axios": "^0.21.0",
+    "semver": "^7.3.4",
+    "url-join": "^4.0.1"
   }
 }

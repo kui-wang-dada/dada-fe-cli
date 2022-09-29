@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const log = require('..');
-const assert = require('assert').strict;
+const log = require("..");
 
-assert.strictEqual(log(), 'Hello from log');
-console.info("log tests passed");
+describe("@dada-fe-cli/log", () => {
+  it("needs tests");
+});

@@ -1,10 +1,7 @@
 {
-  "name": "@dada-fe-cli/log",
+  "name": "@dada-fe-cli/utils",
   "version": "1.0.0",
-  "description": "dada-fe-cli log",
-  "keywords": [
-    "log"
-  ],
+  "description": "dada-fe-cli utils",
   "author": "kui <872505550@qq.com>",
   "homepage": "",
   "license": "ISC",
@@ -16,13 +13,14 @@
   "files": [
     "lib"
   ],
+  "scripts": {
+    "test": "echo \"Run testing from utils\""
+  },
+  "gitHead": "ad99cd763be44ac7ec0a97cb233ce8d0f93d0b96",
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "dependencies": {
-    "npmlog": "^4.1.2"
+    "cli-spinner": "^0.2.10"
   }
 }
