@@ -21,7 +21,7 @@ const TYPE_COMPONENT = "component";
 const TEMPLATE_TYPE_NORMAL = "normal";
 const TEMPLATE_TYPE_CUSTOM = "custom";
 
-const WHITE_COMMAND = ["npm", "cnpm"];
+const WHITE_COMMAND = ["npm", "cnpm", "yarn"];
 
 class InitCommand extends Command {
   init() {
@@ -254,7 +254,7 @@ class InitCommand extends Command {
 
   async prepare() {
     // 0. 判断项目模板是否存在
-    const template = await getProjectTemplate();
+    const template = getProjectTemplate();
     if (!template || template.length === 0) {
       throw new Error("项目模板不存在");
     }
