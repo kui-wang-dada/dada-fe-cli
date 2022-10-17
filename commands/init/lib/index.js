@@ -25,12 +25,10 @@ const WHITE_COMMAND = ["npm", "cnpm", "yarn"];
 
 class InitCommand extends Command {
   init() {
-    console.log(123);
     this.projectName = this._argv[0] || "";
     this.force = !!this._cmd.force;
     log.verbose("projectName", this.projectName);
     log.verbose("force", this.force);
-    console.log(123);
   }
 
   async exec() {
